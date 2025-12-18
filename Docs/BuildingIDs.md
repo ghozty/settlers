@@ -1,0 +1,84 @@
+# Settlers Online - Building Names and IDs #
+
+This list contains building names and their corresponding Building ID values for use in in-game coding and data processing.
+
+
+| Name                                         | Building ID |
+|----------------------------------------------|-------------|
+| AdventureBookbinder                          | 1383        |
+| AirshipExcelsior                             | 867         |
+| Bakery                                       | 0           |
+| Bandits_New                                  | 715         |
+| Banditsleader_New                            | 718         |
+| BanditsLvl2_New                              | 716         |
+| BanditsLvl3_New                              | 717         |
+| Barracks                                     | 33          |
+| Barracks3                                    | 581         |
+| Bookbinder                                   | 87          |
+| Bowmaker                                     | 35          |
+| Brewery                                      | 2           |
+| BronzeMine                                   | 36          |
+| BronzeSmelter                                | 3           |
+| BronzeWeaponsmith                            | 4           |
+| Butcher                                      | 5           |
+| Coinage                                      | 7           |
+| CokingPlant                                  | 8           |
+| Crossbowsmith                                | 9           |
+| decoration_mountain_peak                     | 1176        |
+| DestroyableMountain_Mines_01                 | 625         |
+| DestroyableMountain_Mines_02                 | 626         |
+| DestroyableMountain_Mines_03                 | 627         |
+| DestroyableMountain_Mountain_BIG_sw01        | 622         |
+| DestroyableMountain_Mountain_BIG_sw02        | 623         |
+| DestroyableMountain_Mountain_BIG_sw03        | 624         |
+| ExoticWoodSawmill                            | 41          |
+| ExpeditionWeaponSmith                        | 582         |
+| Farm                                         | 42          |
+| Farmfield                                    | 43          |
+| Farmfield_03                                 | 247         |
+| Finesmith                                    | 370         |
+| Fisher                                       | 44          |
+| Forester                                     | 45          |
+| GoldMine                                     | 46          |
+| GoldSmelter                                  | 10          |
+| Hunter                                       | 49          |
+| IronMine                                     | 50          |
+| IronSmelter                                  | 12          |
+| IronWeaponsmith                              | 51          |
+| lanternSingle                                | 129         |
+| Lettersmith                                  | 371         |
+| Logistics                                    | 52          |
+| Longbowmaker                                 | 53          |
+| MarbleMason                                  | 54          |
+| Mason                                        | 55          |
+| Mayorhouse                                   | 80          |
+| Miller                                       | 13          |
+| MineDepletedDepositBronzeOre                 | 207         |
+| MineDepletedDepositCorn                      | 215         |
+| MineDepletedDepositGoldOre                   | 206         |
+| MineDepletedDepositHalloweenResource_01      | 254         |
+| MineDepletedDepositHalloweenResource_02      | 899         |
+| MineDepletedDepositIronOre                   | 208         |
+| MineDepletedDepositMarble                    | 213         |
+| MineDepletedDepositStone                     | 211         |
+| MineDepletedDepositWater                     | 214         |
+| MountainClanColossus                         | 1781        |
+| NobleResidence                               | 57          |
+| PapermillIntermediate                        | 369         |
+| PapermillSimple                              | 367         |
+| ProvisionHouse                               | 59          |
+| RealWoodCutter                               | 61          |
+| RealWoodForester                             | 60          |
+| RealWoodSawmill                              | 62          |
+| Sawmill                                      | 14          |
+| SimpleResidence                              | 64          |
+| Stable                                       | 15          |
+| SteelForge                                   | 66          |
+| SteelWeaponsmith                             | 67          |
+| Tavern                                       | 68          |
+| Toolmaker                                    | 19          |
+| vases                                        | 141         |
+| Warehouse                                    | 71          |
+| Well                                         | 72          |
+| Well_03                                      | 176         |
+| WoodCutter                                   | 73          |
