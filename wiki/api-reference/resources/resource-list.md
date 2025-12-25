@@ -6,12 +6,11 @@ Complete list of all resource code names used in the game.
 
 Resources are identified by code names (internal identifiers). These are used with `GetPlayerResource(resourceName)`.
 
-## Building Materials
+## Currency & Tokens
 
 | Code Name | Description | Localization Key |
 |-----------|-------------|------------------|
-| `AdvancedTools` | Advanced tools | `RES.AdvancedTools` |
-| `Money` | Coins | `RES.Money` |
+| `Money` | Coins (Warehouse) | `RES.Money` |
 | `Coin` | Coins (Star Menu) | `RES.Coin` |
 | `Coins` | Coins (alternative) | `RES.Coins` |
 | `StarCoins` | Tokens | `RES.StarCoins` |
@@ -20,6 +19,12 @@ Resources are identified by code names (internal identifiers). These are used wi
 | `GuildCoin` | Guild coin (singular) | `RES.GuildCoin` |
 | `Gems` | Gems | `RES.Gems` |
 | `Gem` | Gem (singular) | `RES.Gem` |
+
+## Building Materials
+
+| Code Name | Description | Localization Key |
+|-----------|-------------|------------------|
+| `AdvancedTools` | Advanced tools | `RES.AdvancedTools` |
 | `ExoticWoodPlank` | Exotic wood plank | `RES.ExoticWoodPlank` |
 | `ExoticPlank` | Exotic plank (alt) | `RES.ExoticPlank` |
 | `Granite` | Granite | `RES.Granite` |

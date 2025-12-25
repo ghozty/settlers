@@ -1,14 +1,8 @@
-# Localization Keys Reference
+# Localization Keys Quick Reference
 
-Complete reference of localization categories and common keys.
+Quick reference table for localization categories. For detailed API documentation and code examples, see [Localization API](../api-reference/ui-helpers/localization.md).
 
-## Localization Method
-
-```javascript
-loca.GetText(category, key)
-```
-
-## All Localization Categories
+## Categories
 
 | Category | Description | Example Keys |
 |----------|-------------|--------------|
@@ -24,33 +18,18 @@ loca.GetText(category, key)
 | `DEP` | Deposit names | Deposit type names |
 | `BLD` | Building names | Building display names |
 
-## LAB Category
+## Common Keys
 
-UI labels and buttons:
+### LAB (UI Labels)
 
 | Key | Description |
 |-----|-------------|
-| `Close` | Close button text |
-| `Save` | Save button text |
-| `Cancel` | Cancel button text |
+| `Close` | Close button |
+| `Save` | Save button |
+| `Cancel` | Cancel button |
 | `ToggleOptionsPanel` | Options panel title |
 
-## RES Category
-
-Resource names (see [Resource List](../api-reference/resources/resource-list.md) for complete list):
-
-| Key | Description |
-|-----|-------------|
-| `Coin` | Coins (Star Menu) |
-| `Money` | Coins (Warehouse) |
-| `IronOre` | Iron Ore |
-| `Gold` | Gold |
-| `Fish` | Fish |
-| `Wood` | Pinewood |
-
-## BUF / BUFF Category
-
-Buff and booster names:
+### BUF (Buffs)
 
 | Key | Description |
 |-----|-------------|
@@ -61,50 +40,9 @@ Buff and booster names:
 | `AreaBuff` | Area buff |
 | `MultiplierBuff` | Multiplier buff |
 
-## ADV Category
-
-Adventure names:
-
-| Key Pattern | Description |
-|-------------|-------------|
-| `Adventure_*` | Adventure item names |
-
-## Usage Patterns
-
-### Single Category Lookup
-
-```javascript
-var closeText = loca.GetText("LAB", "Close");
-var coinName = loca.GetText("RES", "Coin");
-var buffName = loca.GetText("BUF", "ProductivityBuff");
-```
-
-### Multi-Category Fallback
-
-For items that may be in different categories:
-
-```javascript
-function getLocalizedWithFallback(key) {
-    var categories = ["RES", "BUF", "BUFF", "ADV", "ITM", "ITEM", "LAB", "TXT", "GUI", "DEP"];
-    
-    for (var i = 0; i < categories.length; i++) {
-        try {
-            var loc = loca.GetText(categories[i], key);
-            if (loc && loc !== key && 
-                loc.indexOf("undefined") === -1 && 
-                loc.indexOf("{") === -1) {
-                return loc;
-            }
-        } catch (e) { }
-    }
-    
-    return key;
-}
-```
-
 ## Related Documentation
 
-- [Localization API](../api-reference/ui-helpers/localization.md) - Complete localization reference
-- [Resource Localization](../api-reference/resources/resource-localization.md) - Resource localization
-- [Item Localization](../api-reference/items/item-localization.md) - Item localization
+- [Localization API](../api-reference/ui-helpers/localization.md) - Complete API reference with code examples
+- [Resource List](../api-reference/resources/resource-list.md) - All resource code names
+- [Item Localization](../api-reference/items/item-localization.md) - Item localization patterns
 - [Star Menu Items](../api-reference/items/star-menu-items.md) - Star Menu item localization
