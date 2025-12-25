@@ -152,3 +152,5 @@ game.gi.mClientMessages.SendMessagetoServer(91, game.gi.mCurrentViewedZoneID, vo
 
 
 
+
+
