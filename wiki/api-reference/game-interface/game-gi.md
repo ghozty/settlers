@@ -403,6 +403,75 @@ if (playerLevel >= task.req[2]) {
 }
 ```
 
+### `mCurrentPlayer.getAvailableBuffs_vector()`
+
+**Signature**: `getAvailableBuffs_vector(): Vector<cBuff>`
+
+**Description**: Gets all items in the player's Star Menu (buffs, boosters, resources, deposits).
+
+**Returns**: Vector of `cBuff` objects
+
+**Usage**:
+```javascript
+var buffVector = game.gi.mCurrentPlayer.getAvailableBuffs_vector();
+if (buffVector && buffVector.length > 0) {
+    for (var i = 0; i < buffVector.length; i++) {
+        var item = buffVector[i];
+        var amount = item.GetAmount();
+        var def = item.GetBuffDefinition();
+        var codeName = def.GetName_string();
+        
+        // For Add Resource / Fill Deposit items, extract resource from toString()
+        var itemStr = item.toString();
+        var match = itemStr.match(/resourceName='([^']+)'/);
+        var resourceName = match ? match[1] : null;
+    }
+}
+```
+
+**Item Types**:
+- `AddResource`: Resources stored in Star Menu (warehouse overflow)
+- `FillDeposit`: Deposit items for mines
+- `ProductivityBuff`, `RecruitingBuff`, etc.: Various buffs
+- `Adventure`: Adventure items
+
+**Important Notes**:
+- Use `item.toString()` to extract `resourceName` for Add Resource and Fill Deposit items
+- `Object.keys(item)` returns empty array - properties are not enumerable
+- See [Star Menu Items](../items/star-menu-items.md) for complete documentation
+
+**Example - Get All Star Menu Items**:
+```javascript
+function getStarMenuItems() {
+    var items = [];
+    var buffVector = game.gi.mCurrentPlayer.getAvailableBuffs_vector();
+    
+    if (buffVector) {
+        for (var i = 0; i < buffVector.length; i++) {
+            var item = buffVector[i];
+            var amount = item.GetAmount();
+            if (amount <= 0) continue;
+            
+            var def = item.GetBuffDefinition();
+            var codeName = def.GetName_string();
+            
+            // Extract resource name from toString() for resource items
+            var resourceName = null;
+            var itemStr = item.toString();
+            var match = itemStr.match(/resourceName='([^']+)'/);
+            if (match) resourceName = match[1];
+            
+            items.push({
+                codeName: codeName,
+                resourceName: resourceName,
+                amount: amount
+            });
+        }
+    }
+    return items;
+}
+```
+
 ### `mCurrentPlayer.mIsAdventureZone`
 
 **Type**: `Boolean`  

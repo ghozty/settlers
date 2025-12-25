@@ -41,14 +41,40 @@ if (!localName || localName.indexOf("undefined") !== -1) {
 }
 ```
 
+## Star Menu Resource Localization
+
+For resources in Star Menu (Add Resource / Fill Deposit items), extract the resource name from `toString()` first:
+
+```javascript
+function getStarMenuResourceName(item) {
+    // Extract resource name from toString() XML
+    var itemStr = item.toString();
+    var match = itemStr.match(/resourceName='([^']+)'/);
+    
+    if (match && match[1]) {
+        var resourceName = match[1];
+        // Now localize it
+        try {
+            var localName = loca.GetText("RES", resourceName);
+            if (localName && localName.indexOf("undefined") === -1) {
+                return localName;
+            }
+        } catch (e) { }
+        return resourceName;
+    }
+    return null;
+}
+```
+
 ## Common Resource Localization Keys
 
 All resources use the pattern: `RES.{CodeName}`
 
 Examples:
-- `RES.Coin` → "Coin" (or localized equivalent)
+- `RES.Coin` → "Coins" (or localized equivalent)
 - `RES.IronOre` → "Iron Ore" (or localized equivalent)
 - `RES.Bread` → "Bread" (or localized equivalent)
+- `RES.Fish` → "Fish" (or localized equivalent)
 
 ## Error Handling
 
@@ -77,4 +103,5 @@ function safeGetLocalizedResource(codeName) {
 - [Resource Access](resource-access.md) - Resource retrieval methods
 - [Resource Categories](resource-categories.md) - Resource categorization
 - [Localization](../ui-helpers/localization.md) - General localization utilities
+- [Star Menu Items](../items/star-menu-items.md) - Star Menu item API
 

@@ -12,9 +12,16 @@ Resources are identified by code names (internal identifiers). These are used wi
 |-----------|-------------|------------------|
 | `AdvancedTools` | Advanced tools | `RES.AdvancedTools` |
 | `Money` | Coins | `RES.Money` |
+| `Coin` | Coins (Star Menu) | `RES.Coin` |
+| `Coins` | Coins (alternative) | `RES.Coins` |
 | `StarCoins` | Tokens | `RES.StarCoins` |
+| `StarCoin` | Tokens (singular) | `RES.StarCoin` |
 | `GuildCoins` | Guild coins | `RES.GuildCoins` |
+| `GuildCoin` | Guild coin (singular) | `RES.GuildCoin` |
+| `Gems` | Gems | `RES.Gems` |
+| `Gem` | Gem (singular) | `RES.Gem` |
 | `ExoticWoodPlank` | Exotic wood plank | `RES.ExoticWoodPlank` |
+| `ExoticPlank` | Exotic plank (alt) | `RES.ExoticPlank` |
 | `Granite` | Granite | `RES.Granite` |
 | `Grout` | Grout | `RES.Grout` |
 | `HardWoodPlank` | Hard wood plank | `RES.HardWoodPlank` |
@@ -24,6 +31,7 @@ Resources are identified by code names (internal identifiers). These are used wi
 | `Plank` | Pinewood plank | `RES.Plank` |
 | `Stone` | Stone | `RES.Stone` |
 | `Tools` | Basic tools | `RES.Tools` |
+| `Tool` | Tool (singular) | `RES.Tool` |
 | `RealWood` | Real wood | `RES.RealWood` |
 | `RealPlank` | Real plank | `RES.RealPlank` |
 | `RealStone` | Real stone | `RES.RealStone` |
@@ -34,6 +42,7 @@ Resources are identified by code names (internal identifiers). These are used wi
 |-----------|-------------|------------------|
 | `Bread` | Bread | `RES.Bread` |
 | `Brew` | Brew/Beer | `RES.Brew` |
+| `Beer` | Beer (alternative) | `RES.Beer` |
 | `Fish` | Fish | `RES.Fish` |
 | `Sausage` | Sausage | `RES.Sausage` |
 | `Meat` | Meat | `RES.Meat` |
@@ -46,6 +55,8 @@ Resources are identified by code names (internal identifiers). These are used wi
 | `BronzeOre` | Bronze ore | `RES.BronzeOre` |
 | `Carriage` | Carriage | `RES.Carriage` |
 | `Coal` | Coal | `RES.Coal` |
+| `Copper` | Copper | `RES.Copper` |
+| `CopperOre` | Copper ore | `RES.CopperOre` |
 | `ExoticWood` | Exotic wood | `RES.ExoticWood` |
 | `Flour` | Flour | `RES.Flour` |
 | `Gold` | Gold | `RES.Gold` |
@@ -56,13 +67,17 @@ Resources are identified by code names (internal identifiers). These are used wi
 | `IronOre` | Iron ore | `RES.IronOre` |
 | `MagicBean` | Magic bean | `RES.MagicBean` |
 | `MagicBeanStalk` | Magic bean stalk | `RES.MagicBeanStalk` |
+| `MagicBeanstalk` | Magic beanstalk (alt) | `RES.MagicBeanstalk` |
 | `MahoganyWood` | Mahogany wood | `RES.MahoganyWood` |
 | `Oilseed` | Oilseed | `RES.Oilseed` |
 | `Wood` | Pinewood | `RES.Wood` |
 | `Platinum` | Platinum | `RES.Platinum` |
 | `PlatinumOre` | Platinum ore | `RES.PlatinumOre` |
 | `SaddleCloth` | Saddle cloth | `RES.SaddleCloth` |
+| `Saddlecloth` | Saddle cloth (alt) | `RES.Saddlecloth` |
 | `Salpeter` | Saltpeter | `RES.Salpeter` |
+| `Silver` | Silver | `RES.Silver` |
+| `SilverOre` | Silver ore | `RES.SilverOre` |
 | `Steel` | Steel | `RES.Steel` |
 | `Titanium` | Titanium | `RES.Titanium` |
 | `TitaniumOre` | Titanium ore | `RES.TitaniumOre` |
@@ -72,8 +87,8 @@ Resources are identified by code names (internal identifiers). These are used wi
 | `Wheel` | Wheel | `RES.Wheel` |
 | `Wool` | Wool | `RES.Wool` |
 | `WoolenCloth` | Woolen cloth | `RES.WoolenCloth` |
+| `Cloth` | Cloth (alternative) | `RES.Cloth` |
 | `Pumpkin` | Pumpkin (event) | `RES.Pumpkin` |
-| `Coins` | Coins (alternative) | `RES.Coins` |
 
 ## Science
 
@@ -84,6 +99,7 @@ Resources are identified by code names (internal identifiers). These are used wi
 | `IntermediatePaper` | Intermediate paper | `RES.IntermediatePaper` |
 | `Nib` | Nib | `RES.Nib` |
 | `Printingpressletter` | Printing press letter | `RES.Printingpressletter` |
+| `Letter` | Letter (alternative) | `RES.Letter` |
 | `Paper` | Simple paper | `RES.Paper` |
 | `BookManuscript` | Book manuscript | `RES.BookManuscript` |
 | `BookTome` | Book tome | `RES.BookTome` |
@@ -99,20 +115,62 @@ Resources are identified by code names (internal identifiers). These are used wi
 | `Pike` | Attack pike | `RES.Pike` |
 | `Saber` | Attack saber | `RES.Saber` |
 | `BattleHorse` | Battle horse | `RES.BattleHorse` |
+| `BattleLance` | Battle lance | `RES.BattleLance` |
 | `Bow` | Bow | `RES.Bow` |
 | `BronzeSword` | Bronze sword | `RES.BronzeSword` |
 | `Cannon` | Cannon | `RES.Cannon` |
+| `CompositeBow` | Composite bow | `RES.CompositeBow` |
 | `Crossbow` | Crossbow | `RES.Crossbow` |
-| `DamasceneSword` | Damascene sword | `RES.DamasceneSword` |
 | `Crossbow_2` | Heavy crossbow | `RES.Crossbow_2` |
+| `ExpeditionCrossbow` | Expedition crossbow | `RES.ExpeditionCrossbow` |
+| `DamasceneSword` | Damascene sword | `RES.DamasceneSword` |
 | `Lance` | Heavy lance | `RES.Lance` |
 | `Mace` | Heavy mace | `RES.Mace` |
+| `SpikedMace` | Spiked mace | `RES.SpikedMace` |
 | `Horse` | Horse | `RES.Horse` |
 | `IronSword` | Iron sword | `RES.IronSword` |
 | `Longbow` | Longbow | `RES.Longbow` |
 | `Mortar` | Mortar | `RES.Mortar` |
 | `PlatinumSword` | Platinum sword | `RES.PlatinumSword` |
 | `SteelSword` | Steel sword | `RES.SteelSword` |
+| `TitaniumSword` | Titanium sword | `RES.TitaniumSword` |
+
+## Special Items
+
+| Code Name | Description | Localization Key |
+|-----------|-------------|------------------|
+| `MapPart` | Map part | `RES.MapPart` |
+| `CollectibleAdamantium` | Collectible adamantium | `RES.CollectibleAdamantium` |
+| `CollectibleBanner` | Collectible banner | `RES.CollectibleBanner` |
+
+## Important Notes
+
+### Coin vs Coins vs Money
+
+The game uses different code names for coins in different contexts:
+- `Coin` - Used in Star Menu items (Add Resource)
+- `Coins` - Alternative code name
+- `Money` - Used in warehouse/storage
+
+Always check both when looking for coin amounts:
+```javascript
+var coinAmount = getPlayerResource("Coin") || getPlayerResource("Money") || getPlayerResource("Coins");
+```
+
+### Singular vs Plural Forms
+
+Some resources have both singular and plural code names:
+- `Tool` / `Tools`
+- `Gem` / `Gems`
+- `StarCoin` / `StarCoins`
+- `GuildCoin` / `GuildCoins`
+
+### Alternative Spellings
+
+Some resources have alternative spellings:
+- `SaddleCloth` / `Saddlecloth`
+- `MagicBeanStalk` / `MagicBeanstalk`
+- `Brew` / `Beer`
 
 ## Usage
 

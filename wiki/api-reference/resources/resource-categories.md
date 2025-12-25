@@ -14,9 +14,16 @@ Resources used for building construction and upgrades.
 |-----------|-------------|
 | `AdvancedTools` | Advanced tools |
 | `Money` | Coins |
+| `Coin` | Coins (Star Menu) |
+| `Coins` | Coins (alternative) |
 | `StarCoins` | Tokens |
+| `StarCoin` | Tokens (singular) |
 | `GuildCoins` | Guild coins |
+| `GuildCoin` | Guild coin (singular) |
+| `Gems` | Gems |
+| `Gem` | Gem (singular) |
 | `ExoticWoodPlank` | Exotic wood plank |
+| `ExoticPlank` | Exotic plank (alt) |
 | `Granite` | Granite |
 | `Grout` | Grout |
 | `HardWoodPlank` | Hard wood plank |
@@ -26,6 +33,7 @@ Resources used for building construction and upgrades.
 | `Plank` | Pinewood plank |
 | `Stone` | Stone |
 | `Tools` | Basic tools |
+| `Tool` | Tool (singular) |
 | `RealWood` | Real wood |
 | `RealPlank` | Real plank |
 | `RealStone` | Real stone |
@@ -38,6 +46,7 @@ Resources consumed by population.
 |-----------|-------------|
 | `Bread` | Bread |
 | `Brew` | Brew/Beer |
+| `Beer` | Beer (alternative) |
 | `Fish` | Fish |
 | `Sausage` | Sausage |
 | `Meat` | Meat |
@@ -52,6 +61,8 @@ Raw materials and ores extracted from deposits.
 | `BronzeOre` | Bronze ore (raw) |
 | `Carriage` | Carriage |
 | `Coal` | Coal |
+| `Copper` | Copper (processed) |
+| `CopperOre` | Copper ore (raw) |
 | `ExoticWood` | Exotic wood |
 | `Flour` | Flour |
 | `Gold` | Gold (processed) |
@@ -62,13 +73,17 @@ Raw materials and ores extracted from deposits.
 | `IronOre` | Iron ore (raw) |
 | `MagicBean` | Magic bean |
 | `MagicBeanStalk` | Magic bean stalk |
+| `MagicBeanstalk` | Magic beanstalk (alt) |
 | `MahoganyWood` | Mahogany wood |
 | `Oilseed` | Oilseed |
 | `Wood` | Pinewood |
 | `Platinum` | Platinum (processed) |
 | `PlatinumOre` | Platinum ore (raw) |
 | `SaddleCloth` | Saddle cloth |
+| `Saddlecloth` | Saddle cloth (alt) |
 | `Salpeter` | Saltpeter |
+| `Silver` | Silver (processed) |
+| `SilverOre` | Silver ore (raw) |
 | `Steel` | Steel (processed) |
 | `Titanium` | Titanium (processed) |
 | `TitaniumOre` | Titanium ore (raw) |
@@ -78,6 +93,7 @@ Raw materials and ores extracted from deposits.
 | `Wheel` | Wheel |
 | `Wool` | Wool |
 | `WoolenCloth` | Woolen cloth |
+| `Cloth` | Cloth (alternative) |
 | `Pumpkin` | Pumpkin (event) |
 
 ## Science
@@ -91,6 +107,7 @@ Resources used for science and research.
 | `IntermediatePaper` | Intermediate paper |
 | `Nib` | Nib |
 | `Printingpressletter` | Printing press letter |
+| `Letter` | Letter (alternative) |
 | `Paper` | Simple paper |
 | `BookManuscript` | Book manuscript |
 | `BookTome` | Book tome |
@@ -108,20 +125,35 @@ Resources used for military equipment.
 | `Pike` | Attack pike |
 | `Saber` | Attack saber |
 | `BattleHorse` | Battle horse |
+| `BattleLance` | Battle lance |
 | `Bow` | Bow |
 | `BronzeSword` | Bronze sword |
 | `Cannon` | Cannon |
+| `CompositeBow` | Composite bow |
 | `Crossbow` | Crossbow |
-| `DamasceneSword` | Damascene sword |
 | `Crossbow_2` | Heavy crossbow |
+| `ExpeditionCrossbow` | Expedition crossbow |
+| `DamasceneSword` | Damascene sword |
 | `Lance` | Heavy lance |
 | `Mace` | Heavy mace |
+| `SpikedMace` | Spiked mace |
 | `Horse` | Horse |
 | `IronSword` | Iron sword |
 | `Longbow` | Longbow |
 | `Mortar` | Mortar |
 | `PlatinumSword` | Platinum sword |
 | `SteelSword` | Steel sword |
+| `TitaniumSword` | Titanium sword |
+
+## Special Items
+
+Special collectible and event items.
+
+| Code Name | Description |
+|-----------|-------------|
+| `MapPart` | Map part |
+| `CollectibleAdamantium` | Collectible adamantium |
+| `CollectibleBanner` | Collectible banner |
 
 ## Categorization Patterns
 
